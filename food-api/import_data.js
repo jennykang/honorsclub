@@ -16,6 +16,7 @@ db.info().then(function (result) {
 if(dbCount>0) {
 	db.destroy();
 }
+
 fs.readFile('test.json', 'utf-8', function(err, data) {
 	if (err) throw err;
 	testData = JSON.parse(data);
