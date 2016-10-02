@@ -104,22 +104,52 @@ app.get('/', function(req, res) {
 });
 
 app.get('/:field/:value', function(req, res) {
+	// Precise search for value
+
 	// Req params: field, value
 	var _field = req.params.field;
 	var _value = req.params.value;
 	var options = {include_docs: true, descending: true};
 	db.allDocs(options).then(function (result) {
-		var filtered = [];
-		result.rows.forEach(function(row){
-			if(row[_field] == _value){
-				filtered.push(row);
-			}
-		});
+		var filtered;
+		if(result != undefined){
+			filtered = result.rows.find(function(item){
+				var i_arr = item.doc[_field];
+				return i_arr.indexOf(_value)!=-1;
+			});
+		
+		console.log(filtered);
 		res.send(filtered);
+		}
 	}).catch(function (err) {
 	  console.log(err);
 	});
 });
+
+// app.get('/fuzzy/:field/:value', function(req, res) {
+// 	// Precise search for value
+
+// 	// Req params: field, value
+// 	var _field = req.params.field;
+// 	var _value = req.params.value;
+// 	var options = {include_docs: true, descending: true};
+// 	db.allDocs(options).then(function (result) {
+// 		var filtered;
+// 		if(result != undefined){
+// 			filtered = result.rows.find(function(item){
+// 				var i_arr = item.doc[_field];
+// 				i_arr.forEach(function(item2) {
+// 					return item2.indexOf(_value)!=-1;
+// 				});
+// 			});
+		
+// 		console.log(filtered);
+// 		res.send(filtered);
+// 		}
+// 	}).catch(function (err) {
+// 	  console.log(err);
+// 	});
+// });
 
 app.listen(3000, function() {
 	console.log('Running on NodeJS');	
