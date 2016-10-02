@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "name": "Italian Chicken Marinade",
+    "i1": "chicken",
+    "i2": "salt",
+    "i3": "garlic",
+    "i4": "",
+    "url": "http://allrecipes.com/recipe/8948/italian-chicken-marinade/?internalSource=staff%20pick&referringId=201&referringContentType=recipe%20hub&clickId=cardslot%203",
+    "vegetarian": "FALSE",
+    "vegan": "FALSE"
+  },
+  {
+    "id": 2,
+    "name": "Korean Fried Chicken",
+    "i1": "chicken",
+    "i2": "onion",
+    "i3": "garlic",
+    "i4": "salt",
+    "url": "http://allrecipes.com/recipe/238844/korean-fried-chicken/?internalSource=staff%20pick&referringId=201&referringContentType=recipe%20hub&clickId=cardslot%205",
+    "vegetarian": "FALSE",
+    "vegan": "FALSE"
+  },
+  {
+    "id": 3,
+    "name": "Orange Roasted Salmon",
+    "i1": "salmon",
+    "i2": "orange",
+    "i3": "lemon",
+    "i4": "",
+    "url": "http://allrecipes.com/recipe/72381/orange-roasted-salmon/?internalSource=staff%20pick&referringId=84&referringContentType=recipe%20hub&clickId=cardslot%205",
+    "vegetarian": "FALSE",
+    "vegan": "FALSE"
+  },
+  {
+    "id": 4,
+    "name": "Potato Curry",
+    "i1": "potato",
+    "i2": "onion",
+    "i3": "garlic",
+    "i4": "curry",
+    "url": "http://allrecipes.com/recipe/165190/spicy-vegan-potato-curry/?internalSource=staff%20pick&referringId=1227&referringContentType=recipe%20hub&clickId=cardslot%206",
+    "vegetarian": "TRUE",
+    "vegan": "TRUE"
+  },
+  {
+    "id": 5,
+    "name": "Spinach Enchilada",
+    "i1": "spinach",
+    "i2": "butter",
+    "i3": "cheese",
+    "i4": "onion",
+    "url": "http://allrecipes.com/recipe/59661/spinach-enchiladas/?internalSource=hn_carousel%2002_Spinach%20Enchiladas&referringId=80&referringContentType=recipe%20hub&referringPosition=carousel%2002",
+    "vegetarian": "TRUE",
+    "vegan": "FALSE"
+  }
+]
