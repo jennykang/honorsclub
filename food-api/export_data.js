@@ -4,5 +4,9 @@ var fs = require('fs');
 var db = new PouchDB('food_db');
 var testData;
 
-db.allDocs({include_docs: true, descending: true}, function(err, doc) {
+var N = db.info().doc_count;
+
+var skip = Math.random(N);
+
+db.allDocs({include_docs: true, descending: true, skip: N, limit: 1}, function(err, doc) {
 });
